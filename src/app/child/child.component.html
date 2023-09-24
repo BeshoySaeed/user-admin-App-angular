@@ -1,0 +1,24 @@
+<div class="container" *ngIf="child; else temp">
+  <h2> users </h2>
+
+  <table *ngFor="let user of users">
+    <tr #userRow class="tableRow" >
+      <td>{{ user }}</td>
+      <td><input type="button" value="remove" 
+        (click)="removeTherow(userRow)" 
+        class="remove" ></td>
+    </tr>
+  </table>
+</div>
+
+<ng-template #temp>
+  <h2> Admins </h2>
+  <table *ngFor="let admin of admins">
+    <tr #adminRow>
+      <td>{{ admin }}</td>
+      <td><input type="button" value="remove" 
+        (click)="removeTherow(adminRow)" 
+        class="remove"></td>
+    </tr>
+  </table>
+</ng-template>

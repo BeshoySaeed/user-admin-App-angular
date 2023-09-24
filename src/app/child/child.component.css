@@ -1,0 +1,20 @@
+.tableRow{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 250px;
+    border-radius: 15px;
+    padding: 20px 15px;
+}
+
+.remove{
+    padding: 7px 4px;
+    border-radius: 20px;
+    border: 0;
+    background-color: rgb(241, 76, 76);
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}

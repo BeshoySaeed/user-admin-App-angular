@@ -1,0 +1,14 @@
+.row{
+    padding:  20px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80vh;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;    
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}

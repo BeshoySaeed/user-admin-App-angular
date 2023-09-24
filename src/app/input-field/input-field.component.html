@@ -1,0 +1,11 @@
+<div class="container" [ngClass]="child ? 'redCont' : 'greenCont'" >
+    <form action="" [formGroup]="myForm" #newform="ngForm" >
+        <input type="text" name="user" id="" formControlName="userName" #userName >
+        <input type="submit" value="Create" [disabled]="newform.invalid" (click)="addUser(userName)" class="btn" >
+        <div class="errors" [hidden]="myForm.get('userName')?.untouched" >
+            <small *ngIf="myForm.get('userName')?.errors?.['required']" >filed required</small>
+            <small *ngIf="myForm.get('userName')?.errors?.['minlength']" >Minimum character 3</small>
+        </div>
+        <p>number of {{child ? 'users' : 'admin'}} {{child ? count : countd}} </p>
+    </form>
+</div>
